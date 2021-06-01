@@ -7,23 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B46DDF8C2663C30100640E7B /* login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46DDF8B2663C30100640E7B /* login.storyboard */; };
 		B4C5AFA82663A1FE00A836E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5AFA72663A1FE00A836E7 /* AppDelegate.swift */; };
 		B4C5AFAA2663A1FE00A836E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5AFA92663A1FE00A836E7 /* SceneDelegate.swift */; };
-		B4C5AFAC2663A1FE00A836E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5AFAB2663A1FE00A836E7 /* ViewController.swift */; };
+		B4C5AFAC2663A1FE00A836E7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C5AFAB2663A1FE00A836E7 /* LoginViewController.swift */; };
 		B4C5AFAF2663A1FE00A836E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C5AFAD2663A1FE00A836E7 /* Main.storyboard */; };
 		B4C5AFB12663A20100A836E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4C5AFB02663A20100A836E7 /* Assets.xcassets */; };
 		B4C5AFB42663A20100A836E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4C5AFB22663A20100A836E7 /* LaunchScreen.storyboard */; };
+		B4FC921726646EA400DC246B /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4FC921626646EA400DC246B /* Poppins-SemiBold.ttf */; };
+		B4FC921A26646EC100DC246B /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4FC921826646EC100DC246B /* Poppins-Medium.ttf */; };
+		B4FC921B26646EC100DC246B /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4FC921926646EC100DC246B /* Poppins-Regular.ttf */; };
+		B4FC921D266558DD00DC246B /* PaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FC921C266558DC00DC246B /* PaddingTextField.swift */; };
+		B4FC921F266561A200DC246B /* signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4FC921E266561A200DC246B /* signup.storyboard */; };
+		B4FC92332666904100DC246B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FC92322666904100DC246B /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B46DDF8B2663C30100640E7B /* login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = login.storyboard; sourceTree = "<group>"; };
 		B4C5AFA42663A1FE00A836E7 /* CustomLoginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomLoginDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4C5AFA72663A1FE00A836E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4C5AFA92663A1FE00A836E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B4C5AFAB2663A1FE00A836E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B4C5AFAB2663A1FE00A836E7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B4C5AFAE2663A1FE00A836E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4C5AFB02663A20100A836E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4C5AFB32663A20100A836E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4C5AFB52663A20100A836E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4FC921626646EA400DC246B /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		B4FC921826646EC100DC246B /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		B4FC921926646EC100DC246B /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		B4FC921C266558DC00DC246B /* PaddingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingTextField.swift; sourceTree = "<group>"; };
+		B4FC921E266561A200DC246B /* signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = signup.storyboard; sourceTree = "<group>"; };
+		B4FC92322666904100DC246B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +72,36 @@
 			children = (
 				B4C5AFA72663A1FE00A836E7 /* AppDelegate.swift */,
 				B4C5AFA92663A1FE00A836E7 /* SceneDelegate.swift */,
-				B4C5AFAB2663A1FE00A836E7 /* ViewController.swift */,
+				B4FC923126668F8200DC246B /* View Controllers */,
+				B4FC921C266558DC00DC246B /* PaddingTextField.swift */,
 				B4C5AFAD2663A1FE00A836E7 /* Main.storyboard */,
 				B4C5AFB02663A20100A836E7 /* Assets.xcassets */,
 				B4C5AFB22663A20100A836E7 /* LaunchScreen.storyboard */,
 				B4C5AFB52663A20100A836E7 /* Info.plist */,
+				B46DDF8B2663C30100640E7B /* login.storyboard */,
+				B4FC921E266561A200DC246B /* signup.storyboard */,
+				B4FC921326646CFB00DC246B /* fonts */,
 			);
 			path = CustomLoginDemo;
+			sourceTree = "<group>";
+		};
+		B4FC921326646CFB00DC246B /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B4FC921826646EC100DC246B /* Poppins-Medium.ttf */,
+				B4FC921926646EC100DC246B /* Poppins-Regular.ttf */,
+				B4FC921626646EA400DC246B /* Poppins-SemiBold.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		B4FC923126668F8200DC246B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B4C5AFAB2663A1FE00A836E7 /* LoginViewController.swift */,
+				B4FC92322666904100DC246B /* HomeViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,8 +161,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4FC921726646EA400DC246B /* Poppins-SemiBold.ttf in Resources */,
+				B46DDF8C2663C30100640E7B /* login.storyboard in Resources */,
+				B4FC921B26646EC100DC246B /* Poppins-Regular.ttf in Resources */,
 				B4C5AFB42663A20100A836E7 /* LaunchScreen.storyboard in Resources */,
+				B4FC921A26646EC100DC246B /* Poppins-Medium.ttf in Resources */,
 				B4C5AFB12663A20100A836E7 /* Assets.xcassets in Resources */,
+				B4FC921F266561A200DC246B /* signup.storyboard in Resources */,
 				B4C5AFAF2663A1FE00A836E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +179,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4C5AFAC2663A1FE00A836E7 /* ViewController.swift in Sources */,
+				B4FC92332666904100DC246B /* HomeViewController.swift in Sources */,
+				B4C5AFAC2663A1FE00A836E7 /* LoginViewController.swift in Sources */,
+				B4FC921D266558DD00DC246B /* PaddingTextField.swift in Sources */,
 				B4C5AFA82663A1FE00A836E7 /* AppDelegate.swift in Sources */,
 				B4C5AFAA2663A1FE00A836E7 /* SceneDelegate.swift in Sources */,
 			);
