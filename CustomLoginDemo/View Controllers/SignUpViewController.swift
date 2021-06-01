@@ -28,6 +28,22 @@ class SignUpViewController: UIViewController {
         setUpElements()
     }
     
+    func validateFields() -> String? {
+        if firstNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            lastNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""  ||
+            emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            return "Please fill in all fields"
+        }
+        
+        let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        if Utilities.isPasswordValid(cleanedPassword) == false {
+            return "Please make sure your password is at least 8 characters, contains a special character and a number."
+        }
+        return nil
+    }
+
     func setUpElements() {
         errorLabel.alpha = 0
     
