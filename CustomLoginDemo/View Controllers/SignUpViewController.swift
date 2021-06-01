@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
+import FirebaseFirestore
 
 class SignUpViewController: UIViewController {
 
@@ -25,7 +28,6 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        setUpElements()
     }
     
     func validateFields() -> String? {
@@ -51,10 +53,52 @@ class SignUpViewController: UIViewController {
     
     @IBAction func signUpTapped(_ sender: Any) {
         // validate the fields
+        let error = validateFields()
         
         // Create the user
+        if error != nil {
+            // There's something wrong with the fields, show error message
+            showError(error!)
+        } else {
+            // Create cleaned versions of the data
+            let firstName = firstNameTextField.text!.trimmingCharacters(in: .whitespaces)
+            let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespaces)
+            let email = emailTextField.text!.trimmingCharacters(in: .whitespaces)
+            let password = passwordTextField.text!.trimmingCharacters(in: .whitespaces)
+            
+            // create the user
+            Auth.auth().createUser(withEmail: email, password: password) { result, err in
+                if let err = err {
+                    // There was an error creating the user
+                    self.showError("Error creating user")
+                } else {
+                    // User was created successfully, now store the first name and the last name
+                    let db = Firestore.firestore()
+                    
+                    db.collection("users").addDocument(data: ["firstname": firstName,
+                                                              "lastname": lastName, "uid": result!.user.uid]) { (error) in
+                        if error != nil {
+                            // show error message
+                            self.showError("Error saving user data")
+                        }
+                    }
+                    
+                    // Transition to the home screen
+                    self.transitionToHome()
+                }
+            }
+            // Transition to the home screen
+
+        }
         
-        // Transition to the home screen
     }
     
+    func showError(_ message: String) {
+        errorLabel.text = message
+        errorLabel.alpha = 1
+    }
+    
+    func transitionToHome() {
+        
+    }
 }
