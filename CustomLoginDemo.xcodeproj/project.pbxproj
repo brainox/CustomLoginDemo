@@ -20,6 +20,8 @@
 		B4FC921D266558DD00DC246B /* PaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FC921C266558DC00DC246B /* PaddingTextField.swift */; };
 		B4FC921F266561A200DC246B /* signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4FC921E266561A200DC246B /* signup.storyboard */; };
 		B4FC92332666904100DC246B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FC92322666904100DC246B /* HomeViewController.swift */; };
+		B4FC92352666911D00DC246B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FC92342666911D00DC246B /* SignUpViewController.swift */; };
+		B4FC92372666916000DC246B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FC92362666916000DC246B /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		B4FC921C266558DC00DC246B /* PaddingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingTextField.swift; sourceTree = "<group>"; };
 		B4FC921E266561A200DC246B /* signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = signup.storyboard; sourceTree = "<group>"; };
 		B4FC92322666904100DC246B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B4FC92342666911D00DC246B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B4FC92362666916000DC246B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 			children = (
 				B4C5AFAB2663A1FE00A836E7 /* LoginViewController.swift */,
 				B4FC92322666904100DC246B /* HomeViewController.swift */,
+				B4FC92342666911D00DC246B /* SignUpViewController.swift */,
+				B4FC92362666916000DC246B /* ViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -179,9 +185,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4FC92352666911D00DC246B /* SignUpViewController.swift in Sources */,
 				B4FC92332666904100DC246B /* HomeViewController.swift in Sources */,
 				B4C5AFAC2663A1FE00A836E7 /* LoginViewController.swift in Sources */,
 				B4FC921D266558DD00DC246B /* PaddingTextField.swift in Sources */,
+				B4FC92372666916000DC246B /* ViewController.swift in Sources */,
 				B4C5AFA82663A1FE00A836E7 /* AppDelegate.swift in Sources */,
 				B4C5AFAA2663A1FE00A836E7 /* SceneDelegate.swift in Sources */,
 			);
