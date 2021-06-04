@@ -10,7 +10,7 @@ import FirebaseAuth
 import Firebase
 import FirebaseFirestore
 
-class SignUpViewController: UIViewController {
+class dummySignUpViewController: UIViewController {
 
     @IBOutlet weak var firstNameTextField: UITextField!
     
@@ -99,6 +99,9 @@ class SignUpViewController: UIViewController {
     }
     
     func transitionToHome() {
-        
+        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController)
+        as?  DummyHomeViewController
+        view.window?.rootViewController = homeViewController
+        view.window?.makeKeyAndVisible()
     }
 }

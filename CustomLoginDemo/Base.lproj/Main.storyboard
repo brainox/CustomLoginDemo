@@ -67,10 +67,10 @@
             </objects>
             <point key="canvasLocation" x="-5528.985507246377" y="150.66964285714286"/>
         </scene>
-        <!--Sign Up View Controller-->
+        <!--Dummy Sign Up View Controller-->
         <scene sceneID="iD1-uS-QFe">
             <objects>
-                <viewController id="eow-B3-V9F" customClass="SignUpViewController" customModule="CustomLoginDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eow-B3-V9F" customClass="dummySignUpViewController" customModule="CustomLoginDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H0C-3o-Qww">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,10 +145,10 @@
             </objects>
             <point key="canvasLocation" x="-4598.5507246376819" y="-8.0357142857142847"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Dummy Home View Controller-->
         <scene sceneID="Zne-4C-aEb">
             <objects>
-                <viewController id="WBC-cG-BTm" customClass="HomeViewController" customModule="CustomLoginDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="WBC-cG-BTm" customClass="DummyHomeViewController" customModule="CustomLoginDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NDd-vb-zvS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
